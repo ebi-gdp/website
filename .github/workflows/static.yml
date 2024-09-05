@@ -41,7 +41,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'  # Deploy only on the main branch
+    if: github.ref == 'refs/heads/main'  # Deploy only on the main branch
 
     steps:
       - name: Checkout code
