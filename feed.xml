@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>INTERVENE platform</title>
+  <subtitle>We integrate AI and human genetics to develop tools for disease prevention, diagnosis, and personalised treatment.</subtitle>
+  <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
+  <link href="https://intervenegeneticscores.org/"/>
+  <updated>2019-04-09T12:24:50Z</updated>
+  <id>https://visual-framework.github.io/vf-eleventy</id>
+  <author>
+    <name>Genetic Data Platform team</name>
+    <email>bwingfield@ebi.ac.uk</email>
+  </author>
+  
+  <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/posts/sample-post/"/>
+    <updated>2019-04-09T12:24:50Z</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/posts/sample-post/</id>
+    <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
+&lt;img src=&quot;https://visual-framework.github.io/images/test-image.png&quot; /&gt;</content>
+  </entry>
+</feed>
