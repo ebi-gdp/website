@@ -1,0 +1,21 @@
+<div class="vf-grid">
+  <div class="vf-body--text">
+    {% markdown %}
+    INTERVENE has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 101016775 
+    {% endmarkdown %}
+    
+    {% if serverInfo.environment == "development" %}
+    <code class="vf-code-example">
+      <pre class="vf-code-example__pre">
+⚠️ You're running the {{serverInfo.environment}} command.
+      </pre>
+    </code>
+    {% endif %}
+
+  </div>
+</div>
+
+<!-- This page was generated on {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }} -->
+<!-- IE11 polyfill JS -->
+{% render '@vf-polyfill-js' %}
+<script src="{{ '/scripts/scripts.js' | url }}"></script>

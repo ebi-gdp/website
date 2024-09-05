@@ -1,0 +1,9 @@
+{
+  "section_header": "node_modules/@visual-framework/vf-section-header/vf-section-header.njk",
+  "links_list": "node_modules/@visual-framework/vf-link-list/vf-link-list.njk",
+  "badge": "node_modules/@visual-framework/vf-badge/vf-badge.njk",
+  "box": "node_modules/@visual-framework/vf-box/vf-box.njk",
+  "card": "node_modules/@visual-framework/vf-card/vf-card.njk",
+  "summarynews": "node_modules/@visual-framework/vf-summary/vf-summary--news.njk"
+
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="vf-no-js">
+  <head>
+    {% render '@vf-no-js' -%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="{{ '/css/styles.css' | url }}" />
+    <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
+    <link href="{{ siteConfig.siteInformation.url }}feed.xml" type="application/rss+xml" rel="alternate" title="{{ siteConfig.siteInformation.title }} RSS Feed">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- Descriptive meta -->
+    <meta name="title" content="{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}">
+    <meta name="author" content="{{ meta.author }}">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="{{ meta.keywords }}">
+    <meta name="description" content="{{ meta.description }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ siteConfig.siteInformation.url }}{{ page.url.slice(1) }}">
+    <meta property="og:title" content="{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}">
+    <meta property="og:description" content="{{ meta.description }}">
+    {% if meta.image -%}
+    <meta property="og:image" content="{{ meta.image | url }}">
+    {%- endif %}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="{{ siteConfig.siteInformation.url }}{{ page.url.slice(1) }}">
+    <meta property="twitter:title" content="{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}">
+    <meta property="twitter:description" content="{{ meta.description }}">
+    {% if meta.image -%}
+    <meta property="twitter:image" content="{{ meta.image | url }}">
+    {%- endif %}
+
+  </head>
+  <body class="{{ bodyClass }} vf-body vf-stack vf-stack--400">
+    <header class="vf-global-header">
+        {% render '@vf-logo', {
+          href:  'https://intervenegeneticscores.org/' | url, 
+          logo_text: 'INTERVENE Platform', 
+          "hidden_text" : false,
+          image: 'images/logo.png' } 
+        %}
+        <nav class="vf-navigation vf-navigation--main | vf-cluster">
+          <ul class="vf-navigation__list | vf-list | vf-cluster__inner">
+            <li class="vf-navigation__item">
+              <a href="https://www.interveneproject.eu/" target="_blank" class="vf-navigation__link">About</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <div class="vf-grid">
+      <div>
+        {{ content | safe }}
+      </div>
+    </div>
+    {% include "footer.njk" %}
+  </body>
+</html>

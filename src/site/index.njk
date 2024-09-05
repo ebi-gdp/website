@@ -1,0 +1,137 @@
+---
+subtitle: No homepage, yet.
+date: 2018-08-22 12:24:50
+layout: layouts/base.njk
+templateEngineOverride: njk, md
+meta:
+  author: Page Author
+  image: your-image-here.png
+  description: "Page description"
+  keywords: "Tags"
+---
+
+{% set context = {
+    "vf_hero_kicker": "",
+    "spacing": 800,
+    "vf_hero_heading": "Welcome to the INTERVENE Platform",
+    "vf_hero_subheading": "The INTERVENE project integrates AI and human genetics to develop tools for disease prevention, diagnosis, and personalised treatment",
+    "vf_hero_text": false,
+    "vf_hero_link_text": "Calculate polygenic scores now",
+    "vf_hero_link_href": "https://intervenegeneticscores.org/calculate",
+    "vf_hero_image": "url('https://acxngcvroo.cloudimg.io/v7/https://www.embl.org/files/wp-content/uploads/vf-hero-intense.png');"}
+%}
+
+{% include containers.hero %} 
+
+{% set context = {
+  "modifier": "vf-u-background-color--grey--lightest vf-u-fullbleed",
+  "cards_aspect_ratio": "16 / 9",
+  "cards_per_row" : 4,
+  "container_section__header": {
+    "section_title": "",
+    "vf_section__content": "",
+    "hidden": true
+  },
+  "vf_cards": [
+      {
+      "id": "about",
+      "variant": "striped",
+      "newTheme": "primary",
+      "card_title": "About this platform",
+      "card_text": "This platform aims to help researchers calculate polygenic scores in human cohorts"
+    },
+    {
+      "id": "calculate",
+      "variant": "bordered",
+      "newTheme": "primary",
+      "card_title": "Genetic scoring service",
+      "card_href": "https://intervenegeneticscores.org/calculate",
+      "card_image": "",
+      "card_text": "Upload your genetic data to calculate polygenic scores in the context of genetic ancestry"
+    },
+    {
+      "id": "pgsc_calc",
+      "variant": "bordered",
+      "newTheme": "primary",
+      "card_title": "Calculate polygenic scores locally",
+      "card_href": "https://github.com/pgscatalog/pgsc_calc",
+      "card_image": "",
+      "card_text": "For more advanced users that can't move their genetic data"
+    },    
+    {
+      "id": "competition",
+      "variant": "bordered",
+      "newTheme": "primary",
+      "card_title": "Methods competition",
+      "card_href": "https://methodscomparison.intervenegeneticscores.org/",
+      "card_image": "",
+      "card_text": "See how well polygenic score development methods perform across diverse cohorts"
+    },
+    {
+      "id": "docs",
+      "variant": "bordered",
+      "newTheme": "primary",
+      "card_title": "Documentation",
+      "card_href": "https://google.com",
+      "card_image": "",
+      "card_text": "Documentation for the INTERVENE platform"
+    },
+    {
+      "id": "help",
+      "variant": "bordered",
+      "newTheme": "primary",
+      "card_title": "Help",
+      "card_href": "https://google.com",
+      "card_image": "",
+      "card_text": "Contact our helpdesk if you're having trouble"
+    },
+    {
+      "id": "pgs",
+      "variant": "striped",
+      "newTheme": "primary",
+      "card_title": "What are polygenic scores?",
+      "card_href": "https://www.genome.gov/Health/Genomics-and-Medicine/Polygenic-risk-scores",
+      "card_text": "Background and explanation"
+    },
+    {
+      "id": "intervene",
+      "variant": "striped",
+      "newTheme": "primary",
+      "card_title": "INTERVENE",
+      "card_href": "https://interveneproject.eu",
+      "card_text": "Find out more about the INTERVENE project"
+    }
+  ]
+}
+%}
+
+{% include containers.card_container %}
+
+<hr class="vf-divider">
+
+<section class="vf-intro | embl-grid embl-grid--has-centered-content">
+  {% render '@vf-section-header', {
+    "section_title": "Updates"
+  } %}
+  <div class="vf-content">
+  {% markdown %}
+
+  Include some updates here 
+
+  {% endmarkdown %}
+
+  </div>
+</section>
+
+
+<div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-button-text="I agree, dismiss this banner"
+data-vf-js-banner-state="dismissible"
+data-vf-js-banner-cookie-name="intervenegeneticscores"
+data-vf-js-banner-cookie-version="0.1"
+data-vf-js-banner-auto-accept="false">
+  <div class="vf-banner__content | vf-grid" data-vf-js-banner-text>
+    <p class="vf-text vf-text-body--2"> This website requires cookies, and the limited processing of your personal data in order to function. By using the site you are agreeing to this as outlined in our <a class="vf-banner__link" href="https://www.ebi.ac.uk/data-protection/privacy-notice/embl-ebi-public-website">Privacy Notice</a> and <a class="vf-banner__link" href="https://www.ebi.ac.uk/about/terms-of-use">Terms of Use</a>. </p>
+  </div>
+</div>
