@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>INTERVENE platform</title>
+  <title>GeneticScores.org</title>
   <subtitle>We integrate AI and human genetics to develop tools for disease prevention, diagnosis, and personalised treatment.</subtitle>
   <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
   <link href="https://intervenegeneticscores.org/"/>
-  <updated>2019-04-09T12:24:50Z</updated>
+  <updated>2024-11-25T00:00:00Z</updated>
   <id>https://visual-framework.github.io/vf-eleventy</id>
   <author>
     <name>Genetic Data Platform team</name>
@@ -13,11 +13,26 @@
   </author>
   
   <entry>
-    <title>I&#39;m an update</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/posts/sample-post/"/>
-    <updated>2019-04-09T12:24:50Z</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/posts/sample-post/</id>
-    <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
-&lt;img src=&quot;https://visual-framework.github.io/intervene-website/images/test-image.png&quot; /&gt;</content>
+    <title>GeneticScores.org launch</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/posts/launch/"/>
+    <updated>2024-11-25T00:00:00Z</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/posts/launch/</id>
+    <content type="html">&lt;section class=&quot;vf-intro&quot; id=&quot;an-id-for-anchor&quot;&gt;
+  &lt;div&gt;&lt;!-- empty --&gt;&lt;/div&gt;
+  &lt;div class=&quot;vf-stack&quot;&gt;
+  &lt;h1 class=&quot;vf-intro__heading vf-intro__heading--has-tag&quot;&gt;GeneticScores.org launch
+&lt;p&gt;&lt;span class=&quot;vf-badge vf-badge--primary vf-badge--phases&quot;&gt;beta&lt;/span&gt; &lt;/p&gt;&lt;/h1&gt;  &lt;h2 class=&quot;vf-intro__subheading&quot;&gt;Welcome to the beta release of INTERVENE GeneticScores.org&lt;/h2&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p class=&quot;vf-intro__text&quot;&gt;A hub for tools and services to help you develop and apply polygenic scores. Access the PGS Catalog Calculator for calculating polygenic scores from the PGS Catalog, run the calculator locally in your own environment or use our online service.
+&lt;/p&gt;&lt;p class=&quot;vf-intro__text&quot;&gt;Please note - for this initial release our online calculation service is not accepting sensitive human data yet. It is suitable only for non-sensitive (synthetic or publicly available datasets).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;embl-grid embl-grid--has-centered-content&quot;&gt;
+    &lt;div&gt; 
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;p&gt;Suitable datasets to test &lt;code&gt;GeneticScores.org&lt;/code&gt; are &lt;a href=&quot;https://docs.intervenegeneticscores.org/data&quot;&gt;described in our documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/section&gt;
+</content>
   </entry>
 </feed>
