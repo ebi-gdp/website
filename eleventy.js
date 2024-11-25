@@ -4,6 +4,8 @@ const Path         = require('path');
 const yaml         = require("js-yaml");
 
 module.exports = function(config) {
+  config.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   config.addPassthroughCopy({ "images/favicon": "/" });
 
   // Add in tags, filters useful for Visual Framework installs
@@ -91,6 +93,10 @@ module.exports = function(config) {
   // use the .yml file associated with the .njk if available
   config.addDataExtension("yml", contents => yaml.safeLoad(contents));
 
+  config.addShortcode("buildTime", () => {
+    return new Date().toISOString();
+  });
+
   return {
     dir: {
       input: "src/site",
@@ -104,7 +110,7 @@ module.exports = function(config) {
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/intervene-website/" // if your site is deployed to a sub-url, otherwise comment out
+    // pathPrefix: "/intervene-website/" // if your site is deployed to a sub-url, otherwise comment out
   };
 
 };

@@ -1,21 +1,83 @@
+<footer class="vf-footer">
+  <div class="vf-footer__inner">
+    <p class="vf-footer__notice">GeneticScores.org is a platform to democratise polygenic scores.</p>
+    <p class="vf-footer__notice">We provide tools and data to help AI developers and human health researchers make better polygenic scores.</p>
+
+    <div class="vf-footer__links-group | vf-grid vf-grid__col-5">
+      <div class="vf-links">
+      <h4 class="vf-links__heading">Resources</h4>
+        <ul class="vf-links__list | vf-list">
+          {% for link in footerLinks.resourceLinks %}
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="{{ 'posts/' | url }}">Updates and blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="vf-links">
+        <h4 class="vf-links__heading">Data protection</h4>
+        <ul class="vf-links__list | vf-list">
+          {% for link in footerLinks.dataLinks %}
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="vf-links">
+        <h4 class="vf-links__heading">Project</h4>
+        <ul class="vf-links__list | vf-list">
+          {% for link in footerLinks.projectLinks %}
+          <li class="vf-list__item">
+            <a class="vf-list__link" href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="vf-links">
+      </div>
+    </div>
+
+    <section class="vf-footer__legal | vf-grid vf-grid__col-1">
+      <span class="vf-footer__legal-text">
+        <a class="vf-footer__link" href="https://www.ebi.ac.uk">GeneticScores.org is developed by EMBL-EBI.</a> <a class="vf-footer__link" href="https://www.embl.org/">EMBL-EBI is part of the European Molecular Biology Laboratory.</a>
+       </span>
+    </section>
+
+    <section class="vf-footer__legal">
+      <span class="vf-footer__legal-text">
+        Copyright © EMBL-EBI {% year %}. All resources and data are open source and permissively licensed, unless otherwise indicated.
+      </span>
+     </section>
+
+    <section class="vf-footer__legal">
+      <span class="vf-footer__legal-text">
+        Current release version: <code class="">{{ siteConfig.siteVersion }}</code>.  <a href="{{ '/posts' | url }}" class="vf-footer__link">Release log.</a>
+      </span>
+    </section>
+
+    <section class="vf-footer__legal | vf-grid vf-grid__col-1">
+      <span class="vf-footer__legal-text">
+        INTERVENE has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 101016775
+       </span>
+    </section>
+  </div>
+</footer>
+
+
+{% if serverInfo.environment == "development" %}
 <div class="vf-grid">
   <div class="vf-body--text">
-    {% markdown %}
-    INTERVENE has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 101016775 
-    {% endmarkdown %}
-    
-    {% if serverInfo.environment == "development" %}
-    <code class="vf-code-example">
-      <pre class="vf-code-example__pre">
-⚠️ You're running the {{serverInfo.environment}} command.
-      </pre>
-    </code>
-    {% endif %}
-
+    <p><code class="vf-code-example__pre"> ⚠️ You're running the {{serverInfo.environment}} command; Page location {{ page.inputPath }} </code></p>
   </div>
 </div>
+{% endif %}
 
-<!-- This page was generated on {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }} -->
+
+<!-- This page was generated on {% buildTime %} -->
 <!-- IE11 polyfill JS -->
 {% render '@vf-polyfill-js' %}
 <script src="{{ '/scripts/scripts.js' | url }}"></script>

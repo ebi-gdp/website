@@ -1,0 +1,31 @@
+{
+  "version": "2.0.3",
+  "name": "@visual-framework/vf-banner",
+  "description": "vf-banner component",
+  "homepage": "https://stable.visual-framework.dev/",
+  "author": "VF",
+  "license": "Apache 2.0",
+  "style": "vf-banner.css",
+  "sass": "index.scss",
+  "main": "build/index.js",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repo": "https://github.com/visual-framework/vf-core/tree/master/tree/master/components/vf-banner",
+  "bugs": {
+    "url": "https://github.com/visual-framework/vf-core/issues"
+  },
+  "keywords": [
+    "fractal",
+    "component"
+  ],
+  "gitHead": "6c483404f12be8ec4dee1c14a651d7f260ea932e",
+  "dependencies": {
+    "@visual-framework/vf-box": "^2.4.0",
+    "@visual-framework/vf-button": "^3.0.1",
+    "@visual-framework/vf-grid": "^1.4.1",
+    "@visual-framework/vf-stack": "^3.0.0",
+    "@visual-framework/vf-u-fullbleed": "^1.2.2"
+  }
+}

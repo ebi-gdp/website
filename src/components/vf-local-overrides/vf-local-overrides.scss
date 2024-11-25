@@ -13,3 +13,27 @@
 .vf-local-overrides {
   /* your settings here */
 }
+
+.vf-card--brand {
+  --vf-card-border-color: #007ac3;
+  --vf-card--striped-bg-color: #862e86;
+}
+
+.vf-card--striped {
+  .vf-card__heading {
+    background-color: #007ac3;
+  }
+}
+
+.vf-footer {
+  border-top: 8px solid #862e86;
+  &::after {
+    background-color: #862e86;
+  }
+}
+
+.vf-hero {
+  background-position: center top -100px;
+  background-repeat: no-repeat;
+  background-color: #862e86;
+}

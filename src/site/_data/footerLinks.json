@@ -1,0 +1,56 @@
+{
+  "resourceLinks": [
+    {
+      "title": "Synthetic data",
+      "url": "https://methodscomparison.intervenegeneticscores.org"
+    },
+    {
+      "title": "Methods comparison",
+      "url": "https://methodscomparison.intervenegeneticscores.org/effect-sizes"
+    },
+    {
+      "title": "Genetic score service",
+      "url": "https://intervenegeneticscores.org/calculate/"
+    },
+    {
+      "title": "Calculate scores locally",
+      "url": "https://github.com/pgscatalog/pgsc_calc?tab=readme-ov-file#the-polygenic-score-catalog-calculator-pgsc_calc"
+    }
+  ],
+  "dataLinks": [
+    {
+      "title": "Terms of Use",
+      "url": "https://www.ebi.ac.uk/about/terms-of-use"
+    },
+    {
+      "title": "Privacy Notice",
+      "url": "https://www.ebi.ac.uk/data-protection/privacy-notice/intervene-platform-public-website"
+    },
+    {
+      "title": "Data Processing",
+      "url": "https://docs.intervenegeneticscores.org"
+    }
+  ],
+  "projectLinks": [
+    {
+      "title": "About",
+      "url": "https://docs.intervenegeneticscores.org"
+    },
+    {
+      "title": "Documentation",
+      "url": "https://docs.intervenegeneticscores.org"
+    },
+    {
+      "title": "Get help",
+      "url": "https://docs.intervenegeneticscores.org"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/ebi-gdp"
+    },
+    {
+      "title": "INTERVENE",
+      "url": "https://www.interveneproject.eu/"
+    }
+  ]
+}

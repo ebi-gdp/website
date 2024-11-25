@@ -94,7 +94,7 @@ button {
 // @import 'vf-activity-list/vf-activity-list.scss';
 // @import 'vf-article-meta-information/vf-article-meta-information.scss';
 
-@import 'vf-profile/vf-profile.scss';
+// @import 'vf-profile/vf-profile.scss';
 
 // @import 'vf-search/vf-search.scss';
 
@@ -113,7 +113,7 @@ button {
 // @import 'vf-video-teaser/vf-video-teaser.scss';
 @import 'vf-global-header/vf-global-header.scss';
 @import 'vf-tabs/vf-tabs.scss';
-@import 'vf-table/vf-table.scss';
+// @import 'vf-table/vf-table.scss';
 // @import 'embl-breadcrumbs-lookup/embl-breadcrumbs-lookup.scss';
 // @import 'vf-pagination/vf-pagination.scss';
 // @import 'vf-pagination/vf-pagination--full.scss';
@@ -128,7 +128,7 @@ button {
 // @import 'embl-content-hub-loader/embl-content-hub-loader.scss';
 
 @import 'vf-banner/vf-banner.scss';
-@import 'vf-banner/vf-banner--phase.scss';
+// @import 'vf-banner/vf-banner--phase.scss';
 @import 'vf-banner/vf-banner--alerts.scss';
 @import 'vf-banner/vf-banner--fixed.scss';
 @import 'vf-banner/vf-banner--gdpr.scss';
@@ -139,7 +139,7 @@ button {
 
 // @import 'vf-news-container/vf-news-container.scss';
 // @import 'vf-video-container/vf-video-container.scss';
-// @import 'vf-footer/vf-footer.scss';
+@import 'vf-footer/vf-footer.scss';
 
 // @import 'vf-show-more/vf-show-more.scss';
 
@@ -176,7 +176,7 @@ button {
 // @import 'vf-somepattern/vf-i-dont-exist.scss';
 
 // Local components
-@import 'vf-sample/vf-sample.scss';
+// @import 'vf-sample/vf-sample.scss';
 
 // If you have any local overrides, put them in:
-@import 'vf-local-overrides/vf-local-overrides.scss';
+@import '../vf-local-overrides/vf-local-overrides.scss';

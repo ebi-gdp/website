@@ -4,24 +4,22 @@ date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 templateEngineOverride: njk, md
 meta:
-  author: Page Author
-  image: your-image-here.png
   description: "Page description"
   keywords: "Tags"
 ---
 
 {% set context = {
     "vf_hero_kicker": "",
-    "spacing": 800,
-    "vf_hero_heading": "Welcome to the INTERVENE Platform",
-    "vf_hero_subheading": "The INTERVENE project integrates AI and human genetics to develop tools for disease prevention, diagnosis, and personalised treatment",
-    "vf_hero_text": false,
-    "vf_hero_link_text": "Calculate polygenic scores now",
-    "vf_hero_link_href": "https://intervenegeneticscores.org/calculate",
-    "vf_hero_image": "url('https://acxngcvroo.cloudimg.io/v7/https://www.embl.org/files/wp-content/uploads/vf-hero-intense.png');"}
+    "spacing": 1600,
+    "vf_hero_heading": "Welcome to GeneticScores.org",
+    "vf_hero_subheading": "GeneticScores.org provides tools and data to help AI developers and human health researchers make better polygenic scores",
+    "vf_hero_image" : "url('https://raw.githubusercontent.com/ebi-gdp/intervene-website/refs/heads/main/src/site/images/hero.jpeg');",
+    "vf_hero_link_text" : "Learn more",
+    "vf_hero_link_href" : "https://docs.intervenegeneticscores.org"
+    }
 %}
 
-{% include containers.hero %} 
+{% include containers.hero %}
 
 {% set context = {
   "modifier": "vf-u-background-color--grey--lightest vf-u-fullbleed",
@@ -33,13 +31,6 @@ meta:
     "hidden": true
   },
   "vf_cards": [
-      {
-      "id": "about",
-      "variant": "striped",
-      "newTheme": "primary",
-      "card_title": "About this platform",
-      "card_text": "This platform aims to help researchers calculate polygenic scores in human cohorts"
-    },
     {
       "id": "calculate",
       "variant": "bordered",
@@ -47,7 +38,7 @@ meta:
       "card_title": "Genetic scoring service",
       "card_href": "https://intervenegeneticscores.org/calculate",
       "card_image": "",
-      "card_text": "Upload your genetic data to calculate polygenic scores in the context of genetic ancestry"
+      "card_text": "Upload synthetic genetic data to calculate polygenic scores"
     },
     {
       "id": "pgsc_calc",
@@ -56,13 +47,21 @@ meta:
       "card_title": "Calculate polygenic scores locally",
       "card_href": "https://github.com/pgscatalog/pgsc_calc",
       "card_image": "",
-      "card_text": "For more advanced users that can't move their genetic data"
-    },    
+      "card_text": "Applications and libraries for local polygenic score calculation"
+    },
+    {
+      "id": "pgs",
+      "variant": "bordered",
+      "newTheme": "primary",
+      "card_title": "Synthetic data",
+      "card_href": "https://methodscomparison.intervenegeneticscores.org",
+      "card_text": "Access synthetic genotypes and phenotypes for AI development"
+    },
     {
       "id": "competition",
       "variant": "bordered",
       "newTheme": "primary",
-      "card_title": "Methods competition",
+      "card_title": "Methods comparison",
       "card_href": "https://methodscomparison.intervenegeneticscores.org/",
       "card_image": "",
       "card_text": "See how well polygenic score development methods perform across diverse cohorts"
@@ -72,21 +71,21 @@ meta:
       "variant": "bordered",
       "newTheme": "primary",
       "card_title": "Documentation",
-      "card_href": "https://google.com",
+      "card_href": "https://docs.intervenegeneticscores.org",
       "card_image": "",
-      "card_text": "Documentation for the INTERVENE platform"
+      "card_text": "Documentation for GeneticScores.org"
     },
     {
       "id": "help",
       "variant": "bordered",
       "newTheme": "primary",
       "card_title": "Help",
-      "card_href": "https://google.com",
+      "card_href": "https://docs.intervenegeneticscores.org/#how-do-i-get-help",
       "card_image": "",
       "card_text": "Contact our helpdesk if you're having trouble"
     },
     {
-      "id": "pgs",
+      "id": "what-are-pgs",
       "variant": "striped",
       "newTheme": "primary",
       "card_title": "What are polygenic scores?",
@@ -111,27 +110,46 @@ meta:
 
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
   {% render '@vf-section-header', {
-    "section_title": "Updates"
+    "section_title": "Recent updates"
   } %}
-  <div class="vf-content">
-  {% markdown %}
 
-  Include some updates here 
+    <div class="vf-content">
+    {%- for post in collections.posts %}
+        {% if (loop.index <= 1) %}
+            <article class="vf-summary vf-summary--news">
+                <span class="vf-summary__date">{{ post.date | dateDisplay }}</span>
+                <img class="vf-summary__image" src="{{ post.data.meta.image | url }}" alt="">
+                <h3 class="vf-summary__title">
+                <a href="{{ post.url }}" class="vf-summary__link">{{ post.data.title }}</a>
+                </h3>
+                <p class="vf-summary__text">
+                    {{ post.data.subtitle }}
+                </p>
+            </article>
+        {% endif %}
+    {%- endfor %}
 
-  {% endmarkdown %}
-
-  </div>
+    <p class="vf-text-body vf-text-body--2">Check out <a href="posts/">all updates here.</a></p>
+    {% set context = {
+    "component-type" : "element",
+    "text" : "This is large body text",
+    "type" : 1
+     }
+    %}
+    {% include "../components/vf-core-components/vf-text/vf-text.njk" %}
+    </div>
 </section>
 
 
-<div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
-data-vf-js-banner
-data-vf-js-banner-button-text="I agree, dismiss this banner"
-data-vf-js-banner-state="dismissible"
-data-vf-js-banner-cookie-name="intervenegeneticscores"
-data-vf-js-banner-cookie-version="0.1"
-data-vf-js-banner-auto-accept="false">
-  <div class="vf-banner__content | vf-grid" data-vf-js-banner-text>
-    <p class="vf-text vf-text-body--2"> This website requires cookies, and the limited processing of your personal data in order to function. By using the site you are agreeing to this as outlined in our <a class="vf-banner__link" href="https://www.ebi.ac.uk/data-protection/privacy-notice/embl-ebi-public-website">Privacy Notice</a> and <a class="vf-banner__link" href="https://www.ebi.ac.uk/about/terms-of-use">Terms of Use</a>. </p>
-  </div>
-</div>
+{% set context = {
+    "component-type" : "container",
+    "data-service-id" : "genetic-scores",
+    "data-protection-version" : 0.1,
+    "banner__text" : "I agree, dismiss this banner",
+    "banner__privacy_href": "https://www.ebi.ac.uk/data-protection/privacy-notice/intervene-platform-public-website",
+    "banner__tou_href": "https://www.ebi.ac.uk/about/terms-of-use",
+    "alert_icon_text" : "dismiss"
+     }
+%}
+
+{% include "../components/vf-banner/vf-banner--fixed.njk" %}

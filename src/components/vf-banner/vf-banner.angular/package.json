@@ -1,0 +1,38 @@
+{
+  "name": "vf-banner.angular",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0 || ^18.0.0",
+    "@angular/core": "^15.2.0 || ^18.0.0",
+    "@visual-framework/vf-badge": "^3.0.0-alpha.0",
+    "@visual-framework/vf-box": "^2.4.0",
+    "@visual-framework/vf-button": "^2.0.0-alpha.6",
+    "@visual-framework/vf-grid": "^1.4.1",
+    "@visual-framework/vf-stack": "^3.0.0",
+    "@visual-framework/vf-u-fullbleed": "^1.2.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2015/vf-banner.angular.mjs",
+  "es2020": "fesm2020/vf-banner.angular.mjs",
+  "esm2020": "esm2020/vf-banner.angular.mjs",
+  "fesm2020": "fesm2020/vf-banner.angular.mjs",
+  "fesm2015": "fesm2015/vf-banner.angular.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/vf-banner.angular.mjs",
+      "es2020": "./fesm2020/vf-banner.angular.mjs",
+      "es2015": "./fesm2015/vf-banner.angular.mjs",
+      "node": "./fesm2015/vf-banner.angular.mjs",
+      "default": "./fesm2020/vf-banner.angular.mjs"
+    }
+  },
+  "gitHead": "6c483404f12be8ec4dee1c14a651d7f260ea932e"
+}
