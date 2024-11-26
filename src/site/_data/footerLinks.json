@@ -2,7 +2,7 @@
   "resourceLinks": [
     {
       "title": "Synthetic data",
-      "url": "https://methodscomparison.intervenegeneticscores.org"
+      "url": "https://methodscomparison.intervenegeneticscores.org/tutorials/synthetic"
     },
     {
       "title": "Methods comparison",
@@ -42,7 +42,7 @@
     },
     {
       "title": "Get help",
-      "url": "https://docs.intervenegeneticscores.org"
+      "url": "https://docs.intervenegeneticscores.org/#how-do-i-get-help"
     },
     {
       "title": "GitHub",
