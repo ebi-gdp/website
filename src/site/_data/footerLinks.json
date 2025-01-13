@@ -2,15 +2,15 @@
   "resourceLinks": [
     {
       "title": "Synthetic data",
-      "url": "https://methodscomparison.intervenegeneticscores.org/tutorials/synthetic"
+      "url": "https://methods.geneticscores.org/tutorials/synthetic.html"
     },
     {
       "title": "Methods comparison",
-      "url": "https://methodscomparison.intervenegeneticscores.org/meta"
+      "url": "https://methods.geneticscores.org/meta.html"
     },
     {
       "title": "Genetic score service",
-      "url": "https://intervenegeneticscores.org/calculate/"
+      "url": "https://geneticscores.org/calculate"
     },
     {
       "title": "Calculate scores locally",
@@ -28,21 +28,21 @@
     },
     {
       "title": "Data Processing",
-      "url": "https://docs.intervenegeneticscores.org"
+      "url": "https://docs.geneticscores.org"
     }
   ],
   "projectLinks": [
     {
       "title": "About",
-      "url": "https://docs.intervenegeneticscores.org"
+      "url": "https://docs.geneticscores.org"
     },
     {
       "title": "Documentation",
-      "url": "https://docs.intervenegeneticscores.org"
+      "url": "https://docs.geneticscores.org"
     },
     {
       "title": "Get help",
-      "url": "https://docs.intervenegeneticscores.org/#how-do-i-get-help"
+      "url": "https://docs.geneticscores.org/#how-do-i-get-help"
     },
     {
       "title": "GitHub",
