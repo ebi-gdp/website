@@ -14,7 +14,7 @@
     },
     {
       "title": "Calculate scores locally",
-      "url": "https://docs.intervenegeneticscores.org/tools"
+      "url": "https://docs.geneticscores.org/tools"
     }
   ],
   "dataLinks": [
@@ -23,13 +23,18 @@
       "url": "https://www.ebi.ac.uk/about/terms-of-use"
     },
     {
-      "title": "Privacy Notice",
-      "url": "https://www.ebi.ac.uk/data-protection/privacy-notice/intervene-platform-public-website"
+      "title": "Privacy notice",
+      "url": "http://www.ebi.ac.uk/data-protection/privacy-notice/geneticscoresorg-analysis-service"
     },
     {
-      "title": "Data Processing",
-      "url": "https://docs.geneticscores.org"
+      "title": "Data processing",
+      "url": "https://docs.geneticscores.org/dataprocessing"
+    },
+    {
+      "title": "Security overview",
+      "url": "https://docs.geneticscores.org/security"
     }
+
   ],
   "projectLinks": [
     {
