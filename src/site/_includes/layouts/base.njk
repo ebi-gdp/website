@@ -35,6 +35,17 @@
     {%- endif %}
 
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NL8X076KX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9NL8X076KX');
+  </script>
+
   <body class="{{ bodyClass }} vf-body vf-stack vf-stack--400">
     <header class="vf-global-header">
         {% render '@vf-logo', {
