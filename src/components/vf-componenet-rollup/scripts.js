@@ -18,11 +18,13 @@ vfBanner();
 // import { vfMastheadSetStyle } from "vf-masthead/vf-masthead";
 // vfMastheadSetStyle();
 
-// import { vfGaIndicateLoaded } from "vf-analytics-google/vf-analytics-google";
-// let vfGaTrackOptions = {
-//   vfGaTrackPageLoad: true
-// };
-// vfGaIndicateLoaded(vfGaTrackOptions);
+import { vfGaIndicateLoaded } from "vf-analytics-google/vf-analytics-google";
+
+let vfGaTrackOptions = {
+    vfGaTrackPageLoad: true,
+    vfGa4MeasurementId: "G-9NL8X076KX"
+}
+vfGaIndicateLoaded(vfGaTrackOptions);
 
 import { vfTabs } from "vf-tabs/vf-tabs";
 vfTabs();
