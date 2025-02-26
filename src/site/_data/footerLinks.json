@@ -38,6 +38,10 @@
   ],
   "projectLinks": [
     {
+      "title": "GeneticScores.org",
+      "url": "https://geneticscores.org"
+    },
+    {
       "title": "About",
       "url": "https://docs.geneticscores.org"
     },
