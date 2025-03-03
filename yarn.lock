@@ -1952,11 +1952,6 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.1.tgz#c0c02713616705e2408a041e67588afc5aa7f845"
   integrity sha512-T/LEPJ+JAsYRnf55gIbRs6AtolB1cuJsuVuACQHvUzam+RqFa3n42NjkGm5h/hBCZpNPmMUeftWq3VFrKAdffg==
 
-"@visual-framework/vf-polyfill-js@1.0.0-alpha.1":
-  version "1.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-polyfill-js/-/vf-polyfill-js-1.0.0-alpha.1.tgz#93cc613ac65e712010c444a8e7dc91376d3c95fc"
-  integrity sha512-uiriBLQY+K4aPoE3oXkBHREhbceEVMqW5C3xFaTWoKIUwxGNRf4akTIsD/13v3m3ODTRAt76qTSzocdmJ2G64A==
-
 "@visual-framework/vf-profile@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-profile/-/vf-profile-1.4.0.tgz#9ce2bcbc3c3d395c0ad5643c7351e4d2ea840ea4"

@@ -58,7 +58,6 @@
     "@visual-framework/vf-navigation": "5.0.3",
     "@visual-framework/vf-news-container": "^1.1.0",
     "@visual-framework/vf-no-js": "1.0.1",
-    "@visual-framework/vf-polyfill-js": "1.0.0-alpha.1",
     "@visual-framework/vf-sass-config": "2.7.2",
     "@visual-framework/vf-sass-utilities": "1.0.1",
     "@visual-framework/vf-section-header": "1.5.5",
