@@ -112,19 +112,17 @@ meta:
   } %}
 
     <div class="vf-content">
-    {%- for post in collections.posts %}
-        {% if (loop.index <= 1) %}
-            <article class="vf-summary vf-summary--news">
-                <span class="vf-summary__date">{{ post.date | dateDisplay }}</span>
-                <img class="vf-summary__image" src="{{ post.data.meta.image | url }}" alt="">
-                <h3 class="vf-summary__title">
-                <a href="{{ post.url }}" class="vf-summary__link">{{ post.data.title }}</a>
-                </h3>
-                <p class="vf-summary__text">
-                    {{ post.data.subtitle }}
-                </p>
-            </article>
-        {% endif %}
+    {%- for post in collections.posts | reverse %}
+        <article class="vf-summary vf-summary--news">
+            <span class="vf-summary__date">{{ post.date | dateDisplay }}</span>
+            <img class="vf-summary__image" src="{{ post.data.meta.image | url }}" alt="">
+            <h3 class="vf-summary__title">
+            <a href="{{ post.url }}" class="vf-summary__link">{{ post.data.title }}</a>
+            </h3>
+            <p class="vf-summary__text">
+                {{ post.data.subtitle }}
+            </p>
+        </article>
     {%- endfor %}
 
     <p class="vf-text-body vf-text-body--2">Check out <a href="posts/">all updates here.</a></p>

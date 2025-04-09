@@ -30,7 +30,7 @@ meta:
     </div>
     <div>
         {% markdown %}
-        Suitable datasets to test `GeneticScores.org` are [described in our documentation](https://docs.geneticscores.org/data).
+        Suitable datasets to test `GeneticScores.org` are [described in our documentation](https://docs.geneticscores.org/how-to/data).
         {% endmarkdown %}
     </div>
 </section>
