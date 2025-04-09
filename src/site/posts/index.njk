@@ -19,7 +19,7 @@ layout: layouts/base.njk
     <!-- empty -->
   </div>
   <div class="">
-{%- for post in collections.posts %}
+{%- for post in collections.posts | reverse %}
 <article class="vf-summary vf-summary--news">
   <span class="vf-summary__date">{{ post.date | dateDisplay }}</span>
   <img class="vf-summary__image" src="{{ post.data.meta.image | url }}" alt="">
