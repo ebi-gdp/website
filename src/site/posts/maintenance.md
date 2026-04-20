@@ -33,6 +33,8 @@ meta:
 
         **Important:** Any data previously uploaded to the service will be automatically deleted according to our [data retention policy](https://docs.geneticscores.org/data/processing#data-retention). Please refer to our documentation for more details on how we handle data.
 
+        In the meantime, you can use the [PGS Catalog Calculator](https://github.com/PGScatalog/pgsc_calc/) as an alternative resource.
+
         We appreciate your patience as we work to improve the service.
         {% endmarkdown %}
     </div>
