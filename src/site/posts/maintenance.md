@@ -29,6 +29,8 @@ meta:
     </div>
     <div>
         {% markdown %}
+        **Update:** The calculation service has been permanently retired. Please see [The GeneticScores.org calculation service has been retired](/posts/calculation-service-retired/) for the supported alternative.
+
         If you have any questions or concerns, please contact us at [intervene-helpdesk@ebi.ac.uk](mailto:intervene-helpdesk@ebi.ac.uk).
 
         **Important:** Any data previously uploaded to the service will be automatically deleted according to our [data retention policy](https://docs.geneticscores.org/data/processing#data-retention). Please refer to our documentation for more details on how we handle data.

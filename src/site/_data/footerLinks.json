@@ -10,7 +10,7 @@
     },
     {
       "title": "Genetic score service",
-      "url": "https://calculate.geneticscores.org/"
+      "url": "/posts/calculation-service-retired/"
     },
     {
       "title": "Calculate scores locally",
@@ -48,10 +48,6 @@
     {
       "title": "Documentation",
       "url": "https://docs.geneticscores.org"
-    },
-    {
-      "title": "Get help",
-      "url": "https://docs.geneticscores.org/#how-do-i-get-help"
     },
     {
       "title": "INTERVENE",
