@@ -4,8 +4,6 @@ subtitle: GeneticScores.org will be temporarily unavailable
 date: 2026-03-30
 tags: posts
 layout: layouts/post.njk
-meta:
-    image: /images/maintenance.svg
 ---
 
 {% render '@vf-intro', {"vf_intro_phase": "",

@@ -4,8 +4,6 @@ subtitle: Welcome to the beta release of INTERVENE GeneticScores.org
 date: 2024-11-25
 tags: posts
 layout: layouts/post.njk
-meta:
-    image: /images/tada.svg
 ---
 
 {% render '@vf-intro', {"vf_intro_phase": "",
@@ -34,4 +32,3 @@ meta:
         {% endmarkdown %}
     </div>
 </section>
-

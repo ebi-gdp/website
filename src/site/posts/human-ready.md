@@ -4,8 +4,6 @@ subtitle: "Upload human genomes and apply polygenic scores"
 date: 2025-04-09
 tags: posts
 layout: layouts/post.njk
-meta:
-    image: /images/rocket.png
 ---
 
 {% render '@vf-intro', {"vf_intro_phase": "",
